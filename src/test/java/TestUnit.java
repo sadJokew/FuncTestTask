@@ -155,10 +155,10 @@ public class TestUnit {
             haveInteger = true;
         }
         // long, long
-        if (function.procedure(paramType1, paramType1).getClass().getCanonicalName().equals("Void")){
+        if (function.procedure(paramType2, paramType2).getClass().getCanonicalName().equals("Void")){
             haveVoid = true;
         }
-        if (function.procedure(paramType1, paramType1).getClass().getCanonicalName().equals("java.lang.Integer")){
+        if (function.procedure(paramType2, paramType2).getClass().getCanonicalName().equals("java.lang.Integer")){
             haveInteger = true;
         }
 
@@ -173,7 +173,7 @@ public class TestUnit {
      * @Description Проверяем работу функции при одном некорректном типе входных данных.
      *
      * @Input
-     * Входные данные корректны:
+     * Входные данные некорректны:
      * <param type> = int
      * <param type> = String
      *
@@ -207,7 +207,7 @@ public class TestUnit {
      * @Description Проверяем работу функции при двух некорректных типех входных данных.
      *
      * @Input
-     * Входные данные корректны:
+     * Входные данные некорректны:
      * <param type> = char
      * <param type> = String
      *
